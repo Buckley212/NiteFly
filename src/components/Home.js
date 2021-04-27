@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import Places from './Places';
 import './style.css';
 
+
 const Home = () => {
-    console.log(Places)
     return (
 
         <Link to="/miami">
