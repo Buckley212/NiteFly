@@ -21,7 +21,7 @@ export class MapContainer extends Component {
             lng: -122.431297
           }
         }//25.762672391722948, -80.223313421781
-      ><Marker title={'The marker`s title will appear as a tooltip.'}
+      ><Marker key={place.place_id} title={'The marker`s title will appear as a tooltip.'}
     name={'SFO'} position={{lat: 37.773972, lng: -122.431297}}></Marker></Map>
     );
   }
