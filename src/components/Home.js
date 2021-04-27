@@ -2,10 +2,8 @@ import React from 'react';
 import miamiPic from '../resources/miami.png';
 import sanFranciscoPic from '../resources/SanFrancisco.png';
 import { Link } from 'react-router-dom';
-import Places from './Places'
 
 const Home = () =>{
-    console.log(Places)
     return (
     <div>  
     <Link to="/miami">
