@@ -2,20 +2,22 @@ import React from 'react';
 import Party from '../resources/party.jpeg';
 import Logo from '../resources/logo.png';
 import { Link } from 'react-router-dom';
-import Places from './Places';
 import './style.css';
 
 
 const Home = () => {
     return (
-
-        <Link to="/miami">
+        <div>
             <article>
                 <img className='homeImg' src={Party} alt="party"></img>
+                <div className="hero">
                 <img className='logo' src={Logo} alt="logo"></img>
-                <h2>Miami</h2>
+                <Link to="/miami">
+                    <h2>Miami</h2>
+                </Link>
+                </div>
             </article>
-        </Link>
+        </div>
     )
 }
 

@@ -12,11 +12,11 @@ export class MapContainer extends Component {
         google={this.props.google}
         zoom={13}
         styles={mapStyle}
-        disableDefaultUI = {true}
-        zoomControl = {false}
-        scaleControl = {false}
-        rotateControl = {false}
-        gestureHandling = "none"
+        // disableDefaultUI = {true}
+        // zoomControl = {false}
+        // scaleControl = {false}
+        // rotateControl = {false}
+        // gestureHandling = "none"
         initialCenter={
           {
             lat: 25.76439676537,
