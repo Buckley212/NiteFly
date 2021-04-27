@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.homeImg{
+  display: flex;
+  height: 100vh;
+  width: 60vw;
+  padding: 0;
+  position: absolute;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+.logo{
+  position:relative;
+  width: 40vw;
+}
+.linkColor{
+  color: purple;
+}

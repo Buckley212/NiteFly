@@ -4,27 +4,31 @@ import React from 'react';
 import Party from '../resources/party.jpeg';
 import Logo from '../resources/logo.png';
 import { Link } from 'react-router-dom';
-// import Places from './Places';
 import './style.css';
 
 
 const Home = () => {
     return (
         <div>
-        <Link to="/miami">
             <article>
 
                 <img className='homeImg' src={Party} alt="party"></img>
-
-                <div className='flex'>
-                    <div><img className='logo' src={Logo} alt="logo"></img></div>
-                    <div><h2>Miami</h2></div>
-                    <div><h2>New York</h2></div>
-                    <div><h2>Los Angeles</h2></div>
-                    <div><h2>Dallas</h2></div>
+                <div className="hero">
+                    <img className='logo' src={Logo} alt="logo"></img>
+                    <Link className='linkColor' to="/miami">
+                        <h2>Miami</h2>
+                    </Link>
+                    <Link className='linkColor' to="/">
+                        <h2>Los Angeles</h2>
+                    </Link>
+                    <Link className='linkColor' to="/">
+                        <h2>New York</h2>
+                    </Link>
+                    <Link className='linkColor' to="/">
+                        <h2>Dallas</h2>
+                    </Link>
                 </div>
             </article>
-        </Link>
         </div>
     )
 }
