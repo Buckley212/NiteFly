@@ -1,32 +1,31 @@
 import React from 'react';
 import miamiPic from '../resources/miami.png';
-import sanFranciscoPic from '../resources/SanFrancisco.png';
+// import sanFranciscoPic from '../resources/SanFrancisco.png';
+import Party from '../resources/party.jpeg';
+import Logo from '../resources/logo.png';
 import { Link } from 'react-router-dom';
+// import Places from './Places';
+import './style.css';
 
-const Home = () =>{
+
+const Home = () => {
     return (
-    <div>  
-    <Link to="/miami">
-        <article>
-            <img src={miamiPic} alt="Miami Beach"></img>
-            <h2>Miami</h2>
-        </article>
-    </Link>
-    {/* <Link to="/SanFrancisco">
-        <article>
-            <img src={sanFranciscoPic} alt="San Francisco"></img>
-            <h2>San Francisco</h2>
-        </article>
-    </Link>
-    <Link to="/NewYork">
-        <article>
-            <img src={miamiPic} alt="New York"></img>
-            <h2>New York</h2>
-        </article>
-    </Link> */}
-    </div>  
-    
-    
+
+        <Link to="/miami">
+            <article>
+
+                <img className='homeImg' src={Party} alt="party"></img>
+
+                <div className='flex'>
+                    <div><img className='logo' src={Logo} alt="logo"></img></div>
+                    <div><h2>Miami</h2></div>
+                    <div><h2>New York</h2></div>
+                    <div><h2>Los Angeles</h2></div>
+                    <div><h2>Dallas</h2></div>
+
+                </div>
+            </article>
+        </Link>
     )
 }
 

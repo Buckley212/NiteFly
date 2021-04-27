@@ -1,0 +1,18 @@
+.homeImg{
+    /* display: flex; */
+    height: 80vw;
+    position: relative;
+    margin: 0 -100px;
+}
+.logo{
+    position:relative;
+    margin-right:0;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    flex-direction: row;
+}
