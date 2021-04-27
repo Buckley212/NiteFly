@@ -6,6 +6,7 @@ const Miami = () => {
 
     return (
         <div>
+            <header height='10vh' width='100vw'>Hi</header>
             <MapContainer />
         </div>
     )

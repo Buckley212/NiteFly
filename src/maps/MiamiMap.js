@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 import mapStyle from './mapStyle.json';
-import Places from '../components/Places'
+import Markers from '../components/Markers';
 
-const mapStyles = {
-  width: '100vw',
-  height: '90vh'
-};
+
 
 export class MapContainer extends Component {
   render() {
@@ -25,8 +22,8 @@ export class MapContainer extends Component {
             lat: 25.76439676537,
             lng: -80.20731679740429
           }
-        }//25.762672391722948, -80.223313421781
-      ></Map>
+        }
+      ><Markers/></Map>
     );
   }
 }
