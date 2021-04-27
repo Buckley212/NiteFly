@@ -14,10 +14,19 @@ const Home = () => {
 
                 <img className='homeImg' src={Party} alt="party"></img>
                 <div className="hero">
-                <img className='logo' src={Logo} alt="logo"></img>
-                <Link to="/miami">
-                    <h2>Miami</h2>
-                </Link>
+                    <img className='logo' src={Logo} alt="logo"></img>
+                    <Link className='linkColor' to="/miami">
+                        <h2>Miami</h2>
+                    </Link>
+                    <Link className='linkColor' to="/">
+                        <h2>Los Angeles</h2>
+                    </Link>
+                    <Link className='linkColor' to="/">
+                        <h2>New York</h2>
+                    </Link>
+                    <Link className='linkColor' to="/">
+                        <h2>Dallas</h2>
+                    </Link>
                 </div>
             </article>
         </div>

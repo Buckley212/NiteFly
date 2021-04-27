@@ -20,6 +20,7 @@ code {
   width: 40vw;
   position: absolute;
   right: 0;
+  height: 100%;
 }
 
 .homeImg{
@@ -39,4 +40,7 @@ article {
 .logo{
   position:relative;
   width: 40vw;
+}
+.linkColor{
+  color: purple;
 }
