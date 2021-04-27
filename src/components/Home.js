@@ -12,18 +12,18 @@ const Home = () =>{
             <h2>Miami</h2>
         </article>
     </Link>
-    <Link to="/San Francisco">
+    {/* <Link to="/SanFrancisco">
         <article>
             <img src={sanFranciscoPic} alt="San Francisco"></img>
             <h2>San Francisco</h2>
         </article>
     </Link>
-    <Link to="/miami">
+    <Link to="/NewYork">
         <article>
             <img src={miamiPic} alt="New York"></img>
             <h2>New York</h2>
         </article>
-    </Link>
+    </Link> */}
     </div>  
     
     
