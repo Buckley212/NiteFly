@@ -1,5 +1,5 @@
 import React from 'react';
-import miamiPic from '../resources/miami.png';
+// import miamiPic from '../resources/miami.png';
 // import sanFranciscoPic from '../resources/SanFrancisco.png';
 import Party from '../resources/party.jpeg';
 import Logo from '../resources/logo.png';
@@ -10,7 +10,7 @@ import './style.css';
 
 const Home = () => {
     return (
-
+        <div>
         <Link to="/miami">
             <article>
 
@@ -22,10 +22,10 @@ const Home = () => {
                     <div><h2>New York</h2></div>
                     <div><h2>Los Angeles</h2></div>
                     <div><h2>Dallas</h2></div>
-
                 </div>
             </article>
         </Link>
+        </div>
     )
 }
 
