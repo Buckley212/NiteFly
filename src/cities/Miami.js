@@ -11,7 +11,6 @@ const Miami = () => {
         <div className="mapPage">
             <header className="style-2">
                 <PlacesList />
-                {/* <NavBar/> */}
             </header>
             
             <MapContainer />

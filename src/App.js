@@ -14,7 +14,6 @@ import './components/NavBar.css';
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/miami' component={Miami} />

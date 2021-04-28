@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import mapStyle from './mapStyle.json';
 import axios from 'axios';
+import NavBar from '../components/NavBar'
 
 
 const MapContainer = (props) => {
@@ -15,6 +16,7 @@ const MapContainer = (props) => {
   }, []);
 
   return (
+    <div><NavBar/>
     <Map
       className='Map'
       google={props.google}
@@ -37,6 +39,7 @@ const MapContainer = (props) => {
       {markers}
 
     </Map>
+    </div>
   );
 
 }
