@@ -17,6 +17,10 @@ code {
   z-index: -5;
 }
 
+.Map:hover {
+  cursor: default;
+}
+
 .marker {
   z-index: 5;
 }

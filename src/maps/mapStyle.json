@@ -27,7 +27,7 @@
       "elementType": "labels.text.stroke",
       "stylers": [
         {
-          "color": "#212121"
+          "color": "#7c09ad"
         }
       ]
     },
@@ -36,7 +36,7 @@
       "elementType": "labels",
       "stylers": [
         {
-          "color": "#211c1c"
+          "color": "#7c09ad"
         },
         {
           "weight": 3.5
@@ -48,7 +48,7 @@
       "elementType": "labels.text.fill",
       "stylers": [
         {
-          "color": "#db0a0a"
+          "color": "#7c09ad"
         }
       ]
     },
