@@ -2,6 +2,7 @@ import React, { useState, useEffect, Component } from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import mapStyle from './mapStyle.json';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,11 +12,10 @@ const MapContainer = (props) => {
     axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=25.76439676537,-80.20731679740429&radius=1500&type=restaurant&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
     .then((response) => {
         //setLocations(response.data.results);
-        setMarkers(response.data.results.map(place =>  <Marker className="marker" key={place.place_id} title={'marker'} name={place.name} position={place.geometry.location}/>))
+        setMarkers(response.data.results.map(place =>  <Link to={`/each-place/${place.place_id}`}><Marker className="marker" key={place.place_id} title={'marker'} name={place.name} position={place.geometry.location}/></Link>))
         })
     }, []);
-
-      return (
+    return (
         <Map
           className='Map'
           google={props.google}
@@ -29,18 +29,17 @@ const MapContainer = (props) => {
           gestureHandling = "none"
           initialCenter={
             {//25.766917437599158, -80.19897262209749
-              lat: 25.766917437599158,
-              lng: -80.19897262209749
+          	lat: 25.766917437599158,
+          	lng: -80.19897262209749
             }
           }
         >
         {markers}
-         
         </Map>
-      );
+    );
     
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M',
+    apiKey: 'AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M',
 })(MapContainer);
