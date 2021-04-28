@@ -18,13 +18,13 @@ const Home = () => {
                     <Link className='linkColor' to="/miami">
                         <h2>Miami</h2>
                     </Link>
-                    <Link className='linkColor' to="/">
-                        <h2>Los Angeles</h2>
+                    <Link className='linkColor' to="/sanfran">
+                        <h2>San Francisco</h2>
                     </Link>
-                    <Link className='linkColor' to="/">
+                    <Link className='linkColor' to="/ny">
                         <h2>New York</h2>
                     </Link>
-                    <Link className='linkColor' to="/">
+                    <Link className='linkColor' to="/dallas">
                         <h2>Dallas</h2>
                     </Link>
                 </div>

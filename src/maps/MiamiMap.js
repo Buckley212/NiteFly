@@ -11,7 +11,7 @@ const MapContainer = (props) => {
     axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=25.76439676537,-80.20731679740429&radius=1500&type=restaurant&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
     .then((response) => {
         //setLocations(response.data.results);
-        setMarkers(response.data.results.map(place =>  <Marker key={place.place_id} title={'marker'} name={place.name} position={place.geometry.location}/>))
+        setMarkers(response.data.results.map(place =>  <Marker className="marker" key={place.place_id} title={'marker'} name={place.name} position={place.geometry.location}/>))
         })
     }, []);
 
@@ -28,9 +28,9 @@ const MapContainer = (props) => {
           rotateControl = {false}
           gestureHandling = "none"
           initialCenter={
-            {
-              lat: 25.76439676537,
-              lng: -80.20731679740429
+            {//25.766917437599158, -80.19897262209749
+              lat: 25.766917437599158,
+              lng: -80.19897262209749
             }
           }
         >

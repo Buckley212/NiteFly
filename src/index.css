@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -14,15 +15,13 @@ code {
 
 .Map {
   position: relative;
-  z-index: -5;
-}
-
-.Map:hover {
-  cursor: default;
+  width: 40vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 .marker {
-  z-index: 5;
+  background-color: purple;
 }
 
 .hero{
@@ -50,10 +49,58 @@ article {
   width: 100vw;
   height: 100vh;
 }
+
 .logo{
   position:relative;
   width: 40vw;
 }
+
 .linkColor{
   color: purple;
+}
+
+.mapPage {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+.mapPage header{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 30vw;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.Location {
+  margin: 20px 10px;
+  padding: 10px;
+  color: white;
+  border-bottom: 1px solid;
+  overflow-x: hidden;
+}
+
+.style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: rgb(114, 113, 113);
+}
+
+.style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: rgb(114, 113, 113);
+}
+
+.style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(104, 9, 136);
 }

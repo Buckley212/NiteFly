@@ -11,7 +11,7 @@
       "elementType": "labels.icon",
       "stylers": [
         {
-          "visibility": "off"
+          "visibility": "on"
         }
       ]
     },
@@ -48,7 +48,7 @@
       "elementType": "labels.text.fill",
       "stylers": [
         {
-          "color": "#7c09ad"
+          "color": "#FFFFFF"
         }
       ]
     },
