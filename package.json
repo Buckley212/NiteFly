@@ -1,6 +1,6 @@
 {
   "name": "nitefly",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "private": true,
   "proxy": "https://maps.googleapis.com",
   "dependencies": {
