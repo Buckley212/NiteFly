@@ -1,5 +1,5 @@
 import React from 'react';
-import miamiPic from '../resources/miami.png';
+// import miamiPic from '../resources/miami.png';
 // import sanFranciscoPic from '../resources/SanFrancisco.png';
 import Party from '../resources/party.jpeg';
 import Logo from '../resources/logo.png';

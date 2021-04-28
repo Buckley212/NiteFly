@@ -1,12 +1,18 @@
 import React from 'react';
 import MapContainer from '../maps/MiamiMap'
+import NavBar from '../components/NavBar'
+import '../components/NavBar.css'
 
 const Miami = () => {
     
 
     return (
         <div>
-            <header height='10vh' width='100vw'>Hi</header>
+            <header>
+                HOME
+                <NavBar/>
+            </header>
+            
             <MapContainer />
         </div>
     )

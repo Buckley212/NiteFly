@@ -12,6 +12,19 @@ code {
     monospace;
 }
 
+.Map {
+  position: relative;
+  z-index: -5;
+}
+
+.Map:hover {
+  cursor: default;
+}
+
+.marker {
+  z-index: 5;
+}
+
 .hero{
   display: flex;
   flex-direction: column;

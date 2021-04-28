@@ -1,11 +1,18 @@
 import React from 'react';
+import './NavBar.css'
 
 function NavBar(props) {
+    
     return (
         <div>
-            <Link to ='/Miami'>Miami</Link>
-            <Link to ='/San Francisco'>San Francisco</Link>
-            <Link to ='/New York'>Home</Link>
+            <div id="nav-icon2" >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> 
+                <span></span>
+                <span></span>       
+            </div>
         </div>
     );
 }
