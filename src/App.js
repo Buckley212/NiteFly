@@ -13,8 +13,8 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/miami' component={Miami} />
         <Route exact path='/sanfran' component={SanFrancisco} />
-        <Route exact path='/ny' component={NewYork} />
-        <Route exact path='/dallas' component={Dallas} />
+        {/* <Route exact path='/ny' component={NewYork} />
+        <Route exact path='/dallas' component={Dallas} /> */}
       </Switch>
     </div>
   );
