@@ -254,6 +254,19 @@ article {
   z-index: 5;
 }
 
+.ani h4 {
+  color:#7c09ad;
+}
+
+.ani h4:hover {
+  color:#7c09ad;
+  text-decoration: none;
+}
+
+.ani Link:hover {
+  text-decoration: none;
+}
+
 .ani::before {
   content: '';
   position: absolute;
@@ -268,10 +281,12 @@ article {
   overflow: hidden;
 }
 
-.ani:hover {
+.ani:hover>* {
   color: rgb(0, 0, 0);
   z-index: 5;
+  text-decoration: none;
 }
+
 .ani:hover::before {
   height: 100%;
   overflow: hidden;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
-import mapStyle from './mapStyle.json';
+import mapStyle from '../../maps/mapStyle.json';
 import axios from 'axios';
-import NavBar from '../components/NavBar'
+import NavBar from '../../components/NavBar'
 
 
 
