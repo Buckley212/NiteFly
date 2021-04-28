@@ -41,7 +41,6 @@ const MapContainer = (props) => {
     </Map>
     </div>
   );
-
 }
 
 export default GoogleApiWrapper({

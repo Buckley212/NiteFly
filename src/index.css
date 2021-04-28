@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color: black;
 }
 
 code {
@@ -24,7 +25,7 @@ code {
   background-color: purple;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +36,7 @@ code {
   height: 100%;
 }
 
-.homeImg{
+.homeImg {
   display: flex;
   height: 100vh;
   width: 60vw;
@@ -48,17 +49,19 @@ article {
   flex-direction: row;
   width: 100vw;
   height: 100vh;
+  background-color: black;
 }
 
-.logo{
+.logo {
   position:relative;
   width: 40vw;
 }
 
-.linkColor{
+.linkColor {
   color: purple;
 }
-.linkColor:hover{
+
+.linkColor:hover {
   color:white;
   text-decoration: none;
 }
@@ -67,9 +70,10 @@ article {
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
+  background-color: black;
 }
 
-.mapPage header{
+.mapPage header {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -77,6 +81,7 @@ article {
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .Location {
@@ -87,24 +92,157 @@ article {
   overflow-x: hidden;
 }
 
-.style-2::-webkit-scrollbar-track
-{
+.style-2::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: rgb(114, 113, 113);
 }
 
-.style-2::-webkit-scrollbar
-{
+.style-2::-webkit-scrollbar {
 	width: 12px;
 	background-color: rgb(114, 113, 113);
 }
 
-.style-2::-webkit-scrollbar-thumb
-{
+.style-2::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: rgb(104, 9, 136);
+}
+
+#nav-icon2 {
+  width: 5rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon2 span {
+  position: absolute;
+  height: 9px;
+  width: 50%;
+  background: palevioletred;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon2 span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+
+#nav-icon2 span:nth-child(odd) {
+  left: 0px;
+  border-radius: 9px 0 0 9px;
+}
+
+#nav-icon2 span:nth-child(1),
+#nav-icon2 span:nth-child(2) {
+  top: 0px;
+}
+
+#nav-icon2 span:nth-child(3),
+#nav-icon2 span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon2 span:nth-child(5),
+#nav-icon2 span:nth-child(6) {
+  top: 36px;
+}
+
+#nav-icon2.open span:nth-child(1),
+#nav-icon2.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon2.open span:nth-child(2),
+#nav-icon2.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon2.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+#nav-icon2.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+#nav-icon2.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+#nav-icon2.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
+}
+
+.middle {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.middle:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 8px;
+  left: 2px;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.middle:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+.focus {
+  transition: all .3s ease-in-out;
+}
+
+.focus:hover {
+  transform: scale(1.1);
 }
