@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color: black;
 }
 
 code {
@@ -48,6 +49,7 @@ article {
   flex-direction: row;
   width: 100vw;
   height: 100vh;
+  background-color: black;
 }
 
 .logo{
@@ -58,11 +60,16 @@ article {
 .linkColor{
   color: purple;
 }
+.linkColor:hover{
+  color:white;
+  text-decoration: none;
+}
 
 .mapPage {
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .mapPage header{
