@@ -58,6 +58,10 @@ article {
 .linkColor{
   color: purple;
 }
+.linkColor:hover{
+  color:white;
+  text-decoration: none;
+}
 
 .mapPage {
   display: flex;
