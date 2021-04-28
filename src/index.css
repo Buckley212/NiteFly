@@ -25,7 +25,7 @@ code {
   background-color: purple;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +36,7 @@ code {
   height: 100%;
 }
 
-.homeImg{
+.homeImg {
   display: flex;
   height: 100vh;
   width: 60vw;
@@ -52,15 +52,16 @@ article {
   background-color: black;
 }
 
-.logo{
+.logo {
   position:relative;
   width: 40vw;
 }
 
-.linkColor{
+.linkColor {
   color: purple;
 }
-.linkColor:hover{
+
+.linkColor:hover {
   color:white;
   text-decoration: none;
 }
@@ -72,7 +73,7 @@ article {
   background-color: black;
 }
 
-.mapPage header{
+.mapPage header {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -91,22 +92,19 @@ article {
   overflow-x: hidden;
 }
 
-.style-2::-webkit-scrollbar-track
-{
+.style-2::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: rgb(114, 113, 113);
 }
 
-.style-2::-webkit-scrollbar
-{
+.style-2::-webkit-scrollbar {
 	width: 12px;
 	background-color: rgb(114, 113, 113);
 }
 
-.style-2::-webkit-scrollbar-thumb
-{
+.style-2::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   box-shadow: inset 0 0 6px rgba(0,0,0,.3);
@@ -216,4 +214,27 @@ article {
 #nav-icon2.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 29px;
+}
+
+.middle {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.middle:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 8px;
+  left: 2px;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.middle:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
