@@ -28,9 +28,9 @@ const MapContainer = (props) => {
           rotateControl = {false}
           gestureHandling = "none"
           initialCenter={
-            {
-              lat: 25.76439676537,
-              lng: -80.20731679740429
+            {//25.766917437599158, -80.19897262209749
+              lat: 25.766917437599158,
+              lng: -80.19897262209749
             }
           }
         >

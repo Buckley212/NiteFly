@@ -9,7 +9,7 @@ const Miami = () => {
 
     return (
         <div className="mapPage">
-            <header>
+            <header className="style-2">
                 <PlacesList />
                 {/* <NavBar/> */}
             </header>
