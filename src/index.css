@@ -85,7 +85,7 @@ article {
 }
 
 .Location {
-  margin: 20px 10px;
+  margin: 0 10px;
   padding: 10px;
   color: white;
   border-bottom: 1px solid;
@@ -245,4 +245,94 @@ article {
 
 .focus:hover {
   transform: scale(1.1);
+}
+
+.ani {
+  position: relative;
+  overflow: hidden;
+  transition: 1s all ease;
+  z-index: 5;
+}
+
+.ani::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  z-index: -5;
+  width: 100%;
+  height: 0%;
+  transition: all 0.6s ease;
+  overflow: hidden;
+}
+
+.ani:hover {
+  color: rgb(0, 0, 0);
+  z-index: 5;
+}
+.ani:hover::before {
+  height: 100%;
+  overflow: hidden;
+  z-index: -50;
+}
+
+.mapPage .load-screen {
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  position: absolute;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: load-fade 2.5s ease-in-out forwards;
+}
+
+svg {
+  z-index: 51;
+  opacity: 1;
+}
+
+@keyframes load-fade {
+  0% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 0.99;
+    z-index: 8;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -10;
+  }
+}
+
+.left {
+  position: relative;
+  transition: all 1.3s ease-in-out;
+  z-index: 60;
+}
+
+.left:after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 30%;
+  background-color: #7c09ad;
+  transform-origin: left;
+  animation: load 1.5s ease-out forwards;
+  z-index: 60;
+}
+
+@keyframes load {
+  from {
+    transform: scaleX(0)
+  }
+  to {
+    transform: scaleX(1)}
 }
