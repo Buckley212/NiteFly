@@ -2,6 +2,9 @@ import React from 'react';
 import './NavBar.css'
 import { Link } from 'react-router-dom'; 
 
+// const [isOpen, setIsOpen] = useState(false);
+// const toggle => setIsOpen(!isOpen)
+
 function NavBar() {
     return (
         <div>
@@ -12,6 +15,9 @@ function NavBar() {
                     <span></span>
                     <span></span>
                     <ul id="menu">
+                    <Link className='linkColor' to="/">
+                            <h4>Home</h4>
+                        </Link>
                         <Link className='linkColor' to="/miami">
                             <h4>Miami</h4>
                         </Link>
@@ -23,6 +29,9 @@ function NavBar() {
                         </Link>
                         <Link className='linkColor' to="/dallas">
                             <h4>Dallas</h4>
+                        </Link>
+                        <Link className='linkColor' to="/about">
+                            <h4>About</h4>
                         </Link>
                     </ul>
                 </div>
