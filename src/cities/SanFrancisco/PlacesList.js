@@ -9,7 +9,7 @@ const PlacesList = () => {
             .then((response) => {
                 console.log(response.data.results);
                 setLocations(response.data.results.map(place => <section className="Location ani focus" key={place.place_id} title={'marker'} >
-                    <Link to={`/each-place/${place.place_id}`}>
+                    <Link to={`/each-place-sf/${place.place_id}`}>
                         <h4>{place.name}</h4>
                     </Link>
                     <span>{place.vicinity}</span>

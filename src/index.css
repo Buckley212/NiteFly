@@ -21,9 +21,6 @@ code {
   overflow-x: hidden;
 }
 
-.marker {
-  background-color: purple;
-}
 
 .hero {
   display: flex;
@@ -356,5 +353,16 @@ svg {
     transform: scaleX(0)
   }
   to {
-    transform: scaleX(1)}
+    transform: scaleX(1)
+  }
+}
+
+.selected {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
 }
