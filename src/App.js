@@ -24,6 +24,7 @@ function App() {
         <Route exact path='/each-place-d/:place_id' component={EachPlaceDallas} />
         <Route exact path='/each-place-sf/:place_id' component={EachPlaceSF} />
         <Route exact path='/each-place-ny/:place_id' component={EachPlaceNY} />
+        <Route exact path="/about" component={About}/>
       </Switch>
     </div>
   );
