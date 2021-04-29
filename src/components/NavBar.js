@@ -30,6 +30,9 @@ function NavBar() {
                         <Link className='linkColor' to="/dallas">
                             <h4>Dallas</h4>
                         </Link>
+                        <Link className='linkColor' to="/about">
+                            <h4>About</h4>
+                        </Link>
                     </ul>
                 </div>
             </nav>
