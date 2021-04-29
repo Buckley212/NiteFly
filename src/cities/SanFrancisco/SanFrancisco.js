@@ -1,9 +1,10 @@
 import React from "react";
-import MapContainer from "./MiamiMap";
+import MapContainer from "./SanFranciscoMap";
+import NavBar from "../../components/NavBar";
 import PlacesList from "./PlacesList";
 import loadImage from "../../resources/full-moon-and-clouds-svgrepo-com (1).svg";
 
-const Miami = () => {
+const SanFrancisco = () => {
 	return (
 		<div className="mapPage">
 			<header className="style-2">
@@ -18,4 +19,4 @@ const Miami = () => {
 	);
 };
 
-export default Miami;
+export default SanFrancisco;
