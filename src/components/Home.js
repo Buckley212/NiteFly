@@ -25,9 +25,6 @@ const Home = () => {
                     <Link className='linkColor middle focus' to="/dallas">
                         <h2>Dallas</h2>
                     </Link>
-                    <Link className='linkColor middle focus' to="/about">
-                        <h2>About</h2>
-                    </Link>
                 </div>
             </article>
         </div>

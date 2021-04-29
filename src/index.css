@@ -394,3 +394,8 @@ svg {
     padding: 50px;
     border: 10px white dashed;
 }
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
