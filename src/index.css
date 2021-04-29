@@ -44,6 +44,10 @@ code {
   position: absolute;
 }
 
+h2{
+  color: white;
+}
+
 article {
   display: flex;
   flex-direction: row;

@@ -5,6 +5,8 @@ import Miami from "./cities/Miami/Miami";
 import SanFrancisco from "./cities/SanFrancisco/SanFranciscoMap";
 import NavBar from "./components/NavBar";
 import EachPlace from './cities/Miami/EachPlace'
+import Dallas from './cities/Dallas/Dallas';
+import NewYork from './cities/NewYork/NewYork';
 
 function App() {
   return (
@@ -14,9 +16,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/miami" component={Miami} />
         <Route exact path="/sanfran" component={Miami} />
-        <Route exact path="/ny" component={Miami} />
-        <Route exact path="/dallas" component={Miami} />
-        <Route exact path='/each-place' component={EachPlace} />
+        <Route exact path="/ny" component={NewYork} />
+        <Route exact path="/dallas" component={Dallas} />
+        <Route exact path='/each-place/:place_id' component={EachPlace} />
       </Switch>
     </div>
   );
