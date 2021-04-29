@@ -17,13 +17,13 @@ const MapContainer = (props) => {
   }, []);
 
   return (
-    <div>
+    <div className="map-container">
     <NavBar/>
     
     <Map
       className='Map'
       google={props.google}
-      zoom={14.5}
+      zoom={14.25}
       draggableCursor='default'
       styles={mapStyle}
       disableDefaultUI={true}
@@ -33,8 +33,8 @@ const MapContainer = (props) => {
       gestureHandling="none"
       initialCenter={
         {//25.766917437599158, -80.19897262209749
-          lat: 25.766917437599158,
-          lng: -80.19897262209749
+          lat: 25.767917437599158,
+          lng: -80.220000000000
         }
       }
     >

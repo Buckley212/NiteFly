@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const PlacesList = () => {
     const [locations, setLocations] = useState([])
     useEffect(() => {
-        axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=25.76439676537,-80.20731679740429&radius=1500&type=restaurant&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
+        axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=32.78711711056142,-96.78982852480252&radius=1500&type=restaurant&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
             .then((response) => {
                 console.log(response.data.results);
                 setLocations(response.data.results.map(place => <section className="Location ani focus" key={place.place_id} title={'marker'} >
-                    <Link to={`/each-place/${place.place_id}`}>
+                    <Link to='/each-place'>
                         <h4>{place.name}</h4>
                     </Link>
                     <span>{place.vicinity}</span>
