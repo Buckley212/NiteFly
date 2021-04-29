@@ -2,6 +2,9 @@ import React from 'react';
 import './NavBar.css'
 import { Link } from 'react-router-dom'; 
 
+// const [isOpen, setIsOpen] = useState(false);
+// const toggle => setIsOpen(!isOpen)
+
 function NavBar() {
     return (
         <div>
