@@ -3,15 +3,14 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Miami from "./cities/Miami/Miami";
 import SanFrancisco from "./cities/SanFrancisco/SanFrancisco";
-import NavBar from "./components/NavBar";
 import EachPlace from './cities/Miami/EachPlace'
 import Dallas from './cities/Dallas/Dallas';
 import NewYork from './cities/NewYork/NewYork';
+import About from './components/About'
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/miami" component={Miami} />
@@ -19,6 +18,7 @@ function App() {
         <Route exact path="/ny" component={NewYork} />
         <Route exact path="/dallas" component={Dallas} />
         <Route exact path='/each-place/:place_id' component={EachPlace} />
+        <Route exact path='/about' component={About} />
       </Switch>
     </div>
   );
