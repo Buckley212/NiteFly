@@ -15,6 +15,9 @@ function NavBar() {
                     <span></span>
                     <span></span>
                     <ul id="menu">
+                    <Link className='linkColor' to="/">
+                            <h4>Home</h4>
+                        </Link>
                         <Link className='linkColor' to="/miami">
                             <h4>Miami</h4>
                         </Link>
