@@ -1,6 +1,5 @@
 import React from "react";
 import MapContainer from "./NewYorkMap";
-import NavBar from "../../components/NavBar";
 import PlacesList from "./PlacesList";
 import loadImage from "../../resources/full-moon-and-clouds-svgrepo-com (1).svg";
 
