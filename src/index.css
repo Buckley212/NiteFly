@@ -349,7 +349,6 @@ svg {
 }
 
 @keyframes load {
-<<<<<<< HEAD
   from {
     transform: scaleX(0)
   }
@@ -367,52 +366,3 @@ svg {
   height: 100vh;
   flex-direction: column;
 }
-=======
-    from {
-        transform: scaleX(0);
-    }
-    to {
-        transform: scaleX(1);
-    }
-}
-
-.Aboutpg {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 40vw;
-    position: absolute;
-    right: 0;
-    height: 100%;
-}
-
-.aboutImg {
-    display: flex;
-    height: 100vh;
-    width: 55vw;
-    padding: 0;
-    position: fixed;
-    left: 0;
-}
-
-.aboutInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 45vw;
-    position: absolute;
-    right: 0;
-    height: 100%;
-    background: black;
-    color: #7c09ad;
-    padding: 50px;
-    border: 10px white dashed;
-}
-
-p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
->>>>>>> fd3f420e615ac34b65f6df1080e785a4062bc43a
