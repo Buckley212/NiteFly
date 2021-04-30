@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import mapStyle from '../../maps/mapStyle.json';
 import "../../index.css";
 import BackButton from '../../components/BackButton'
 import Likes from '../../components/Likes'
@@ -22,6 +24,7 @@ const EachPlace = ({ match }) => {
 	return (
 		<div className="selected">
 			<BackButton />
+			
 			<h2 style={{ borderBottom: '2px solid white' }}>{findPlace?.name}</h2>
 			<br></br>
 			<span style={{ color: "white" }}>Address: {findPlace?.vicinity}</span>
