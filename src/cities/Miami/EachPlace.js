@@ -12,7 +12,7 @@ const EachPlace = ({ match }) => {
 		axios.get("https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=25.76439676537,-80.20731679740429&radius=1500&type=bar&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M")
 			.then((response) => {
 				//setLocations(response.data.results);
-				console.log(response.data.results);
+				console.log(response.data);
 				setPlaces(response.data.results);
 			});
 	}, []);

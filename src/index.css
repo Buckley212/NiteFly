@@ -20,7 +20,7 @@ code {
     height: 100vh;
     overflow-x: hidden;
     transform-style: preserve-3d;
-    transform: perspective(500px) translateZ(-30vw) scale(1.68);
+    transform: perspective(500px) translateZ(-30vw) scale(2);
     perspective: 1000;
 }
 
