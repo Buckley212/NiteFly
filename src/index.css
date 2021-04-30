@@ -459,6 +459,22 @@ svg {
     background-color: black;
 }
 
+.joke {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.5s ease-in-out; 
+}
+
+.joke:hover {
+    opacity: 1;
+    background-color: black;
+    color: white;
+    z-index: 5;
+}
 
 .backBtn::before{
     color: white;

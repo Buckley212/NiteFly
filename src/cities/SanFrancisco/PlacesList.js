@@ -49,7 +49,7 @@ const PlacesList = () => {
                             <h4>{place.name}</h4>
                         </Link>
                         <span>{place.vicinity}</span>
-                        <p>{place.rating}<br />{'★'.repeat(Math.floor(place.rating))}{'☆'.repeat(~(Math.floor(place.rating) - 5) + 1)}</p>
+                        <p>Rating: {place.rating}<br />{'★'.repeat(Math.floor(place.rating))}{'☆'.repeat(~(Math.floor(place.rating) - 5) + 1)}</p>
                         <p className="price">{'$'.repeat(place.price_level)}</p>
                         <p className="likes">👍  {likesNum}</p>
                     </section>)

@@ -15,7 +15,7 @@ function Likes() {
                 <h5>Did this place satisfy your munchies?</h5>
             </div>
             <div>
-                <button className='likesBtn' onClick={() => like1 < likes1+1 && like2 < likes2?  setLike1(++like1): setLike1(like1)}>
+                <button className='likesBtn' onClick={() => like1 < likes1 && like2 < likes2?  setLike1(++like1): setLike1(like1)}>
                     <p style={{color}}>Yum Yum!</p> {like1} 
                 </button>
                 <button className='likesBtn' onClick={() => like2 < likes2 && like1 < likes1?  setLike2(++like2): setLike2(like2)}>
