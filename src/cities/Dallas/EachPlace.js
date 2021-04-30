@@ -17,11 +17,18 @@ const EachPlace = ({ match }) => {
 		return place.place_id === match.params.place_id;
 	});
 
+
+
 	return (
 		<div className="selected">
-			<h2>{findPlace?.name}</h2>
-			<span>{findPlace?.vicinity}</span>
-		</div>
+			<h2 style={{ borderBottom: '2px solid white' }}>{findPlace?.name}</h2>
+			<br></br>
+			<span style={{ color: "white" }}>Address: {findPlace?.vicinity}</span>
+			<br></br>
+			<span style={{ color: "white" }}>Rating: {findPlace?.rating} Stars</span>
+			<br></br>
+			{/* <span>{findPlace?.opening_hours}</span> */}
+		</div >
 	);
 };
 
