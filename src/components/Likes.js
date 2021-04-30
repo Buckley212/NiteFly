@@ -2,16 +2,11 @@ import React, {useState} from 'react';
 
 
 function Likes() {
-<<<<<<< HEAD
-    let [like1, setLike1] = useState(0);
-    let [like2, setLike2] = useState(20);
-=======
     const likes1 = (Math.floor(Math.random() * 1000)+1000);
     const likes2 = (Math.floor(Math.random() * 1000)+10);
 
     let [like1, setLike1] = useState(likes1-1);
     let [like2, setLike2] = useState(likes2-1);
->>>>>>> d5cbc8e8f081c2778837f3db9c7355a704d7a60f
     const color = 'white'
     return (
         
