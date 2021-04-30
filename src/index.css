@@ -401,3 +401,33 @@ svg {
 .aboutInfo h1 {
     color: white;
 }
+
+.sort {
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.buttons button{
+    border: none;
+    border-right: 2px solid black;
+    padding: 10px 30px;
+    background-color:#7c09ad;
+    color: white;
+    transition: 0.25s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: white;
+    transform: scale(1.1);
+    color:#7c09ad;
+}
+
