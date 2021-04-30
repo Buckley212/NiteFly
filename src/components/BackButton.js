@@ -5,7 +5,7 @@ function BackButton(props) {
 
     return (
         <button className='backBtn'>
-            <a href="javascript:history.back()"> Back </a>
+            <a href="javascript:history.back()"> ' </a>
         </button>
     );
 }

@@ -45,7 +45,7 @@ const PlacesList = () => {
                     const likesNum = Math.floor(Math.random()*1000)
                     return (
                         <section className="Location ani focus" name={place.name} likes={likesNum} rating={place.rating} key={place.place_id} price={place.price_level} title={place.name} >
-                        <Link to={`/each-place/${place.place_id}`}>
+                        <Link to={`/each-place-sf/${place.place_id}`}>
                             <h4>{place.name}</h4>
                         </Link>
                         <span>{place.vicinity}</span>
