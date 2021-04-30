@@ -4,21 +4,31 @@ import { Link } from 'react-router-dom';
 
 const PlacesList = () => {
     const [locations, setLocations] = useState([])
+    const sortByRating = () => {
+        let sortedList = [...locations]
+        sortedList.sort((a, b) => {
+                console.log(typeof a.rating, a)
+            return b.props.rating - a.props.rating
+            }
+        )
+        return setLocations(sortedList)
+    };
     useEffect(() => {
         axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=25.76439676537,-80.20731679740429&radius=1500&type=restaurant&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
             .then((response) => {
                 console.log(response.data.results);
-                setLocations(response.data.results.map(place => <section className="Location ani focus" key={place.place_id} title={'marker'} >
+                setLocations(response.data.results.map(place => <section className="Location ani focus" rating={place.rating} key={place.place_id} title={'marker'} >
                     <Link to={`/each-place/${place.place_id}`}>
                         <h4>{place.name}</h4>
                     </Link>
                     <span>{place.vicinity}</span>
+                    <p>{place.rating}<br />{'★'.repeat(Math.floor(place.rating))}{'☆'.repeat(~(Math.floor(place.rating) - 5) + 1)}</p>
                 </section>))
             })
     }, []);
-
     return (
         <div>
+            <button onClick={() => sortByRating()}>Sort by Rating</button>
             {locations}
         </div>
     );
