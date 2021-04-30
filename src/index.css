@@ -431,3 +431,18 @@ svg {
     color:#7c09ad;
 }
 
+.place-list section:nth-of-type(1) {
+    background-color: rgb(56, 7, 56);
+    color: white;
+    margin: 0 -8px;
+}
+
+.place-list section:nth-of-type(1) h4::before{
+    content: 'HOT!  ';
+    color: white;
+}
+
+.place-list {
+    margin: 0;
+}
+

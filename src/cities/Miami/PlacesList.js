@@ -35,7 +35,7 @@ const PlacesList = () => {
             })
     }, []);
     return (
-        <div>
+        <div className = "place-list">
             <div className="buttons">
             <p className="sort">Sort By: </p>
             <button onClick={() => sortByRating()}>Rating</button>
