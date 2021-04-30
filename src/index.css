@@ -427,7 +427,7 @@ svg {
 .buttons button{
     border: none;
     border-right: 2px solid black;
-    padding: 10px 15px;
+    padding: 10px 8px;
     background-color:#7c09ad;
     color: white;
     transition: 0.25s ease-in-out;
@@ -464,3 +464,7 @@ svg {
     margin: 0;
 }
 
+.likes {
+    padding-top: 5px;
+    color: white;
+}
