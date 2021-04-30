@@ -440,6 +440,11 @@ svg {
 .place-list section:nth-of-type(1) h4::before{
     content: 'HOT!  ';
     color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.place-list section:nth-of-type(1):hover h4::before {
+    color: black;
 }
 
 .place-list {
