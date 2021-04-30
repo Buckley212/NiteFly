@@ -8,7 +8,7 @@ import NavBar from '../../components/NavBar';
 const MapContainer = (props) => {
   const [markers, setMarkers] = useState([])
   useEffect(() => {
-    axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=37.748898693450016,-122.43793300701175&radius=1500&type=restaurant&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
+    axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=37.748898693450016,-122.43793300701175&radius=1500&type=bar&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
       .then((response) => {
         //setLocations(response.data.results);
         setMarkers(response.data.results.map(place => {

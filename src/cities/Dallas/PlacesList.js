@@ -22,7 +22,7 @@ const PlacesList = () => {
         return setLocations(sortedList1)
     };
     useEffect(() => {
-        axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=32.78711711056142,-96.78982852480252&radius=1500&type=restaurant&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
+        axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=32.78711711056142,-96.78982852480252&radius=1500&type=bar&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
             .then((response) => {
                 console.log(response.data.results);
                 setLocations(response.data.results.map(place => <section className="Location ani focus" name={place.name} rating={place.rating} key={place.place_id} title={place.name} >
