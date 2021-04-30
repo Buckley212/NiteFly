@@ -11,8 +11,10 @@ const Home = () => {
     return (
         <div>
             <article>
+                <div>
                 <NavBar/>
                 <DadJoke />
+                </div>
                 <img className='homeImg' src={Party} alt="party"></img>
                 <div className="hero">
                     <img className='logo' src={Logo} alt="logo"></img>
