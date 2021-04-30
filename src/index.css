@@ -426,8 +426,10 @@ svg {
     margin: 20px;
     background-color: purple;
     border-radius: 2em;
-    width: fit-content;
-    padding: 10px;
+    border: none;
+    box-shadow: none;
+    width: 150px;
+    padding: -5px;
     font-weight: bold;
 }
 
@@ -435,11 +437,58 @@ svg {
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: none;
+    border: none;
     margin-left: 10px;
     margin-top: 10px;
-    background-color: purple;
-    color: white;
+    background-color: black;
+    color: black;
     border-radius: 10px;
+    font-size: 70px;
+    z-index: 5;
+}
+
+.backBtn a {
+    color: black;
+    z-index: 10;
+    padding: 20px;
+}
+
+.backBtn a:hover, .backBtn a:active, .backBtn a:active  {
+    color: black;
+    background-color: black;
+}
+
+.joke {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.5s ease-in-out; 
+}
+
+.joke:hover {
+    opacity: 1;
+    background-color: black;
+    color: white;
+    z-index: 5;
+}
+
+.backBtn::before{
+    color: white;
+    content: '<';
+    position: absolute;
+    z-index: -1;
+}
+
+.back Link:hover {
+    transform: none;
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 0;
 }
 
 .backBtn a,
@@ -447,13 +496,13 @@ svg {
 .backBtn a:focus,
 .backBtn a:active {
     text-decoration: none;
-    color: white;
 }
 
 .backBtn:active {
-    background-color: orangered;
+    background-color: black;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+    box-shadow: none;
 }
 .sort {
     margin-top: 10px;
@@ -515,3 +564,4 @@ svg {
     margin: 0;
     color: white;
 }
+

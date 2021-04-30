@@ -17,7 +17,7 @@ function DadJokes() {
 
 
     return (
-        <div Style="color:black">
+        <div className="joke">
             {joke}
         </div>
     );

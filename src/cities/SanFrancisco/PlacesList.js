@@ -45,11 +45,11 @@ const PlacesList = () => {
                     const likesNum = Math.floor(Math.random()*1000)
                     return (
                         <section className="Location ani focus" name={place.name} likes={likesNum} rating={place.rating} key={place.place_id} price={place.price_level} title={place.name} >
-                        <Link to={`/each-place/${place.place_id}`}>
+                        <Link to={`/each-place-sf/${place.place_id}`}>
                             <h4>{place.name}</h4>
                         </Link>
                         <span>{place.vicinity}</span>
-                        <p>{place.rating}<br />{'★'.repeat(Math.floor(place.rating))}{'☆'.repeat(~(Math.floor(place.rating) - 5) + 1)}</p>
+                        <p>Rating: {place.rating}<br />{'★'.repeat(Math.floor(place.rating))}{'☆'.repeat(~(Math.floor(place.rating) - 5) + 1)}</p>
                         <p className="price">{'$'.repeat(place.price_level)}</p>
                         <p className="likes">👍  {likesNum}</p>
                     </section>)

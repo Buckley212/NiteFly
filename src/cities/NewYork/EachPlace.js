@@ -4,7 +4,7 @@ import "../../index.css";
 import BackButton from '../../components/BackButton'
 import Likes from '../../components/Likes'
 
-const EachPlace = ({ match }) => {
+const EachPlace = (props) => {
 	const [places, setPlaces] = useState([]);
 	useEffect(() => {
 		axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7240075270916,-73.99412661354273&radius=1500&type=bar&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
@@ -16,7 +16,7 @@ const EachPlace = ({ match }) => {
 	}, []);
 
 	const findPlace = places.find((place) => {
-		return place.place_id === match.params.place_id;
+		return place.place_id === props.match.params.place_id;
 	});
 
 	return (
