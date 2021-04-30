@@ -446,3 +446,46 @@ svg {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+.sort {
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.buttons button {
+    border: none;
+    border-right: 2px solid black;
+    padding: 10px 30px;
+    background-color: #7c09ad;
+    color: white;
+    transition: 0.25s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: white;
+    transform: scale(1.1);
+    color: #7c09ad;
+}
+
+.place-list section:nth-of-type(1) {
+    background-color: rgb(56, 7, 56);
+    color: white;
+    margin: 0 -8px;
+}
+
+.place-list section:nth-of-type(1) h4::before {
+    content: "HOT!  ";
+    color: white;
+}
+
+.place-list {
+    margin: 0;
+}
