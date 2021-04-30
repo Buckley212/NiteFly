@@ -439,6 +439,7 @@ svg {
     margin-top: 10px;
     background-color: purple;
     color: white;
+    border-radius: 10px;
 }
 
 .backBtn a,
@@ -450,7 +451,7 @@ svg {
 }
 
 .backBtn:active {
-    background-color: #3e8e41;
+    background-color: orangered;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
