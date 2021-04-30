@@ -21,9 +21,13 @@ const EachPlace = ({ match }) => {
 
 	return (
 		<div className="selected">
-			<BackButton/>
-			<h2>{findPlace?.name}</h2>
-			<span>{findPlace?.vicinity}</span>
+			<BackButton />
+			<h2 style={{ borderBottom: '2px solid white' }}>{findPlace?.name}</h2>
+			<br></br>
+			<span style={{ color: "white" }}>Address: {findPlace?.vicinity}</span>
+			<br></br>
+			<span style={{ color: "white" }}>Rating: {findPlace?.rating} Stars</span>
+			<br></br>
 		</div>
 	);
 };
