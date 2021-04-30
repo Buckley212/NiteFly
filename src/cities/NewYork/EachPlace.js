@@ -7,7 +7,7 @@ import Likes from '../../components/Likes'
 const EachPlace = ({ match }) => {
 	const [places, setPlaces] = useState([]);
 	useEffect(() => {
-		axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7240075270916,-73.99412661354273&radius=1500&type=restaurant&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
+		axios.get('https://iron-cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7240075270916,-73.99412661354273&radius=1500&type=bar&key=AIzaSyBibnOWEr72nhfg0dEPgv5Amv09pXcRk_M')
 			.then((response) => {
 				//setLocations(response.data.results);
 				console.log(response.data.results);

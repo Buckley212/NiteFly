@@ -126,7 +126,7 @@ a:hover {
   */
 #menuToggle input:checked ~ ul {
     transform: none;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 @media screen and (max-width: 768px) {

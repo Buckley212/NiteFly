@@ -19,6 +19,14 @@ code {
     width: 40vw;
     height: 100vh;
     overflow-x: hidden;
+    transform-style: preserve-3d;
+    transform: perspective(500px) translateZ(-30vw) scale(1.68);
+    perspective: 1000;
+}
+
+.price {
+    padding: 0;
+    margin: -15px 0 -5px 0;
 }
 
 .hero {
@@ -463,7 +471,7 @@ svg {
 .buttons button {
     border: none;
     border-right: 2px solid black;
-    padding: 10px 30px;
+    padding: 10px 15px;
     background-color: #7c09ad;
     color: white;
     transition: 0.25s ease-in-out;
@@ -479,11 +487,21 @@ svg {
     background-color: rgb(56, 7, 56);
     color: white;
     margin: 0 -8px;
+    transition: 0.25s;
+}
+
+.place-list section:nth-of-type(1):hover {
+    transform: scale(1.01);
 }
 
 .place-list section:nth-of-type(1) h4::before {
     content: "HOT!  ";
     color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.place-list section:nth-of-type(1):hover h4::before {
+    color: black;
 }
 
 .place-list {
