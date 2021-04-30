@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../../index.css";
+import BackButton from '../../components/BackButton'
 
 const EachPlace = ({ match }) => {
 	const [places, setPlaces] = useState([]);
@@ -21,6 +22,7 @@ const EachPlace = ({ match }) => {
 
 	return (
 		<div className="selected">
+			<BackButton />
 			<h2 style={{ borderBottom: '2px solid white' }}>{findPlace?.name}</h2>
 			<br></br>
 			<span style={{ color: "white" }}>Address: {findPlace?.vicinity}</span>

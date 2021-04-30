@@ -5,11 +5,13 @@ import Party from '../resources/party.jpeg';
 import Logo from '../resources/logo.png';
 import { Link } from 'react-router-dom';
 import DadJoke from './DadJokes'
+import NavBar from '../components/NavBar'
 
 const Home = () => {
     return (
         <div>
             <article>
+                <NavBar/>
                 <DadJoke />
                 <img className='homeImg' src={Party} alt="party"></img>
                 <div className="hero">

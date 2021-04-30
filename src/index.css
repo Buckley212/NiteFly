@@ -21,7 +21,6 @@ code {
     overflow-x: hidden;
 }
 
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -349,20 +348,56 @@ svg {
 }
 
 @keyframes load {
-  from {
-    transform: scaleX(0)
-  }
-  to {
-    transform: scaleX(1)
-  }
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
 }
 
 .selected {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  flex-direction: column;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.Aboutpg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    position: fixed;
+    right: 0;
+    height: 100%;
+}
+
+.aboutImg {
+    height: 100vh;
+    width: 55vw;
+    padding: 0;
+    position: fixed;
+    left: 0;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    right: 0;
+    height: 100%;
+    background-color: black;
+    padding: 20px;
+    border: 5px dashed white;
+    color: #7c09ad;
+}
+
+.aboutInfo h1 {
+    color: white;
 }
