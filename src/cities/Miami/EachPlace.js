@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../../index.css";
 import BackButton from '../../components/BackButton'
+import Likes from '../../components/Likes'
 
 const EachPlace = ({ match }) => {
 	const [places, setPlaces] = useState([]);
@@ -27,6 +28,7 @@ const EachPlace = ({ match }) => {
 			<br></br>
 			<span style={{ color: "white" }}>Rating: {findPlace?.rating} Stars</span>
 			<br></br>
+			<Likes/>
 		</div>
 	);
 };

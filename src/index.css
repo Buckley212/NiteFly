@@ -19,9 +19,9 @@ code {
     width: 40vw;
     height: 100vh;
     overflow-x: hidden;
-    transform-style:preserve-3d;
-    transform:perspective(500px) translateZ(-30vw) scale(1.68);
-    perspective:1000;
+    transform-style: preserve-3d;
+    transform: perspective(500px) translateZ(-30vw) scale(1.68);
+    perspective: 1000;
 }
 
 .price {
@@ -402,7 +402,7 @@ svg {
     height: 100%;
     background-color: black;
     padding: 20px;
-    border: 5px dashed white;
+    border: 2px dashed white;
     color: #7c09ad;
 }
 
@@ -410,6 +410,50 @@ svg {
     color: white;
 }
 
+.likes {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: purple;
+}
+
+.h5 {
+    color: purple;
+}
+
+.likesBtn {
+    margin: 20px;
+    background-color: purple;
+    border-radius: 2em;
+    width: fit-content;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.backBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: purple;
+    color: white;
+}
+
+.backBtn a,
+.backBtn a:hover,
+.backBtn a:focus,
+.backBtn a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.backBtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 .sort {
     margin-top: 10px;
     margin-right: 10px;
@@ -424,7 +468,7 @@ svg {
     width: 100%;
 }
 
-.buttons button{
+.buttons button {
     border: none;
     border-right: 2px solid black;
     padding: 10px 8px;
@@ -436,22 +480,22 @@ svg {
 .buttons button:hover {
     background-color: white;
     transform: scale(1.1);
-    color:#7c09ad;
+    color: #7c09ad;
 }
 
 .place-list section:nth-of-type(1) {
     background-color: rgb(56, 7, 56);
     color: white;
     margin: 0 -8px;
-    transition: 0.25s
+    transition: 0.25s;
 }
 
 .place-list section:nth-of-type(1):hover {
     transform: scale(1.01);
 }
 
-.place-list section:nth-of-type(1) h4::before{
-    content: 'HOT!  ';
+.place-list section:nth-of-type(1) h4::before {
+    content: "HOT!  ";
     color: white;
     transition: 0.4s ease-in-out;
 }
@@ -466,5 +510,7 @@ svg {
 
 .likes {
     padding-top: 5px;
+    padding: 0;
+    margin: 0;
     color: white;
 }
