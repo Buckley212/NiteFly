@@ -1,10 +1,12 @@
 import React from 'react';
 
 function BackButton(props) {
+// let leftArrow ='\U+02190';
+
     return (
-        <div>
-            <a href="javascript:history.back()">Go Back</a>
-        </div>
+        <button className='backBtn'>
+            <a href="javascript:history.back()"> Back </a>
+        </button>
     );
 }
 

@@ -401,3 +401,48 @@ svg {
 .aboutInfo h1 {
     color: white;
 }
+
+.likes {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: purple;
+}
+
+.h5 {
+    color: purple;
+}
+
+.likesBtn {
+    margin: 20px;
+    background-color: purple;
+    border-radius: 2em;
+    width: fit-content;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.backBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: purple;
+    color: white;
+}
+
+.backBtn a,
+.backBtn a:hover,
+.backBtn a:focus,
+.backBtn a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.backBtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
